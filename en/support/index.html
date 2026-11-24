@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — ParkNum</title>
+<meta name="description" content="How to use ParkNum, setting Location to Always, what to check when notifications don’t arrive, and how to contact us.">
+<link rel="alternate" hreflang="ja" href="https://kenjitayama.github.io/parknum-site/ja/support/">
+<link rel="alternate" hreflang="en" href="https://kenjitayama.github.io/parknum-site/en/support/">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../../assets/icon.svg" alt="">ParkNum</a>
+    <nav class="site">
+      <a href="../">Home</a>
+      <a href="./" aria-current="page">Support</a>
+      <a href="../privacy/">Privacy</a>
+    </nav>
+    <a class="lang" href="../../ja/support/" hreflang="ja" lang="ja">日本語</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Support</h1>
+  <p class="lead">How to use ParkNum and answers to common questions. If this page doesn’t solve your problem, please <a href="#contact">contact us on GitHub Issues</a>.</p>
+
+  <h2 id="how-to">How to use</h2>
+  <ol>
+    <li>Open the app. The number pad appears. Enter your parking spot number (up to 6 digits).</li>
+    <li>If you want a notification when you come back, turn on “Notify on return.”</li>
+    <li>Tap Save. ParkNum shows the number, when you saved it, and how much time has passed.</li>
+    <li>When you pick up your car or bike, tap Clear. This deletes the number and the saved location and stops the return notification.</li>
+  </ol>
+
+  <h2 id="faq">FAQ</h2>
+
+  <h3 id="always">Why does ParkNum need “Always” location access?</h3>
+  <p>“Notify on return” works by having iOS detect when you come back within about 150 m (500 ft) of the place you saved, even while ParkNum is closed. iOS can only do this in the background if Location is set to “Always.”</p>
+  <p>ParkNum gets your current location only once, when you tap Save. After that, iOS watches for your arrival; ParkNum does not record where you go. Your location is used only on your iPhone and is never sent anywhere.</p>
+  <p>If you don’t use “Notify on return,” you don’t need to allow location access at all. Saving numbers and the widgets work without it.</p>
+
+  <h3 id="set-always">How do I change Location to “Always”?</h3>
+  <ol>
+    <li>Open the Settings app on your iPhone.</li>
+    <li>Tap Apps → ParkNum → Location (on some iOS versions: Settings → ParkNum → Location).</li>
+    <li>Choose “Always.” We also recommend turning on “Precise Location.”</li>
+  </ol>
+  <p>You can also jump to Settings from ParkNum’s Status screen (the ⓘ button at the top right of the number screen) or from “Open Settings” in the notice on the number screen.</p>
+
+  <h3 id="when-in-use">What happens if I keep “While Using the App”?</h3>
+  <p>You can still save numbers, but you won’t get the return notification while the app is closed. The number screen shows a notice: “Background notifications need Always Allow.”</p>
+
+  <h3 id="no-notification">I came back but didn’t get a notification</h3>
+  <p>First, open the Status screen with the ⓘ button at the top right of the number screen and check what it shows. Then check the following:</p>
+  <ul>
+    <li><strong>Did you leave and then come back?</strong> The notification is sent when you move from outside the area (about 150 m around the saved spot) to inside it. You won’t get one while you stay near the spot.</li>
+    <li><strong>Is Location set to “Always”?</strong> On the Status screen, Location should show “Always.”</li>
+    <li><strong>Are notifications allowed?</strong> In Settings → Notifications → ParkNum, make sure Allow Notifications is on.</li>
+    <li><strong>Is a Focus on?</strong> Make sure a Focus such as Sleep or Do Not Disturb isn’t silencing notifications.</li>
+    <li><strong>Is the saved location right?</strong> On the Status screen, tap “Check saved spot on map” and confirm the pin is where you actually parked.</li>
+    <li><strong>Is the saved location accuracy “Low”?</strong> Accuracy can drop underground or inside buildings. Try saving again in a more open area.</li>
+    <li><strong>Do notifications arrive at all?</strong> Tap “Send a test notification” on the Status screen. A test notification should arrive in about 3 seconds.</li>
+  </ul>
+  <p>iOS decides when to report your arrival, so depending on signal conditions the notification may be a few minutes late.</p>
+
+  <h3 id="setup-failed">I got “Couldn’t set up the return notification”</h3>
+  <p>When you saved, ParkNum couldn’t get your current location or register the return area, or location or notification access isn’t allowed. The notification text explains the reason. Check the permissions, tap Clear, and save again. When setup succeeds, you’ll get “Return notification is ready.”</p>
+
+  <h3 id="stop">How do I stop the return notification?</h3>
+  <p>Tap Clear. This removes the return area, and no more notifications will be sent. If you don’t want a notification next time, turn off “Notify on return” before you tap Save. Until you clear it, you may get a notification each time you leave the area and come back.</p>
+
+  <h3 id="widget">How do I add a widget?</h3>
+  <ul>
+    <li><strong>Home Screen:</strong> Touch and hold an empty area of the Home Screen, tap Edit → Add Widget, and choose ParkNum (small or medium).</li>
+    <li><strong>Lock Screen:</strong> Touch and hold the Lock Screen, tap Customize → Lock Screen, then add ParkNum in the widget area.</li>
+  </ul>
+  <p>The widgets show the number, when you saved it, and the elapsed time.</p>
+
+  <h3 id="data">Where is my data stored?</h3>
+  <p>Only on your iPhone. ParkNum has no accounts and no servers. Deleting the app deletes its data. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+
+  <h3 id="ipad">Can I use ParkNum on iPad?</h3>
+  <p>ParkNum is made for iPhone.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Please send bug reports and questions through GitHub Issues (a GitHub account is required).</p>
+  <p><a class="button" href="https://github.com/kenjitayama/parknum-site/issues/new/choose">Contact us on GitHub Issues</a></p>
+  <p class="note">Issues are public. Please don’t include personal information such as your address, exact location, or email address. For bug reports, it helps to include your iPhone model, iOS version, ParkNum version, and the steps that led to the problem.</p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Kenji Tayama · <a href="../">Home</a> · <a href="../privacy/">Privacy Policy</a>
+  </div>
+</footer>
+</body>
+</html>

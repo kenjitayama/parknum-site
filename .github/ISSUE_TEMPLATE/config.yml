@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: FAQ (English)
+    url: https://kenjitayama.github.io/parknum-site/en/support/
+    about: Check the FAQ first.
+  - name: よくある質問（日本語）
+    url: https://kenjitayama.github.io/parknum-site/ja/support/
+    about: まずはよくある質問をご確認ください。
