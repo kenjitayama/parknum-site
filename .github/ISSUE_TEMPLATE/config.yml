@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Contact form / お問い合わせフォーム
+    url: https://forms.gle/H2Dxd4RhXW7EbtMq8
+    about: Bug reports, feature requests, and questions. No account needed. / 不具合・要望・質問はこちら（アカウント不要）。
   - name: FAQ (English)
     url: https://kenjitayama.github.io/parknum-site/en/support/
     about: Check the FAQ first.
